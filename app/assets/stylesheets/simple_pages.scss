@@ -1,3 +1,38 @@
-// Place all the styles related to the simple_pages controller here.
-// They will automatically be included in application.css.
+nav {
+	color: #a80822;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 1.125em;
+  line-height: 1.42857143;
+  letter-spacing: 0.05em;
+  font-weight: 300;
+}
+
+h1 {
+	color: #a80822;
+  font-family: 'Playfair Display', serif;
+  font-family: 'PT Serif', serif;
+}
+
+h3 {
+	color: #a80822;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+p {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+li {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+footer {
+	color: white;
+	height: 100%;
+	background-color: #a80822;
+}
+
+
+
+
 // You can use Sass (SCSS) here: http://sass-lang.com/
