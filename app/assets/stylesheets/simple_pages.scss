@@ -4,6 +4,7 @@ html, body {
 
 nav {
 	color: #a80822;
+	background-color: #b5b610;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 1.125em;
   line-height: 1.42857143;
@@ -11,20 +12,38 @@ nav {
   font-weight: 300;
 }
 
+nav li {
+	display: inline-block;
+	padding: 10px;
+}
+
 h1 {
 	color: #a80822;
   font-family: 'Playfair Display', serif;
   font-family: 'PT Serif', serif;
+  font-size: 4em;
+  font-weight: 500;
+}
+
+h2 {
+	color: #a80822;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 3em;
+  padding-bottom: 60px;
 }
 
 h3 {
 	color: #a80822;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  padding-top: 0;
+  padding-bottom: 40px;
 }
 
 p {
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 2em;
 }
+
 
 li {
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -36,7 +55,7 @@ li {
 
 footer {
 	color: white;
-	height: 5%;
+	padding: 20px 0;
 	background-color: #a80822;
 }
 

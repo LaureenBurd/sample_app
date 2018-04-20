@@ -17,12 +17,14 @@
 
 
   <body>
-  	<nav>
-		  <ul class="nav nav-pills">
-		    <li role="presentation"><%= link_to "Home", root_path %></li>
-		    <li role="presentation"><%= link_to "About", simple_pages_about_path %></li>
-		    <li role="presentation"><%= link_to "Contact", simple_pages_contact_path %></li>
-		  </ul>
+  	<nav class-"navbar navbar-inverse navbar-fixed top">
+      <div class="container-fluid"
+  		  <ul class="nav nav-pills">
+  		    <li role="presentation"><b><%= link_to "HOME", root_path %></b></li>
+  		    <li role="presentation"><b><%= link_to "ABOUT", simple_pages_about_path %></b></li>
+  		    <li role="presentation"><b><%= link_to "CONTACT", simple_pages_contact_path %></b></li>
+  		  </ul>
+      </div>
 		</nav>
 
 
@@ -31,9 +33,9 @@
     </div>
 
 
-    <footer>
+    <center><footer>
 		  &copy; 2018 Bike Berlin
-		</footer>
+		</footer></center>
 
   </body>
 </html>
