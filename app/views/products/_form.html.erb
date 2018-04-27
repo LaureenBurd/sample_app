@@ -27,8 +27,13 @@
   </div>
 
    <div class="field">
+    <%= form.label :year %><br>
+    <%= form.text_field :year, id: :product_year %>
+  </div>
+
+   <div class="field">
     <%= form.label :color %><br>
-    <%= form.text_field :color %>
+    <%= form.text_field :color, id: :product_color %>
   </div>
 
   <div class="field">
@@ -39,6 +44,11 @@
   <div class="field">
     <%= form.label :gender %>
     <%= form.text_field :gender, id: :product_gender %>
+  </div>
+
+  <div class="field">
+    <%= form.label :price %>
+    <%= form.text_field :price, id: :product_price %>
   </div>
 
   <div class="field">

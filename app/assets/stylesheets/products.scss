@@ -3,6 +3,30 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 
-#product_description {
-	width: 40%;
+
+#products {
+	padding-right: 120px;
 }
+
+#products h3 {
+	margin-bottom: 0;
+	padding-bottom: 5px;
+	padding-top: 5px;
+}
+
+#products p {
+	font-size: 1.5em;
+	line-height: 1.42857143;
+	padding-bottom: 5px;
+}
+
+#products strong {
+	padding-right: 40px;
+}
+
+#products img {
+	padding-top: 50px;
+}
+
+
+
