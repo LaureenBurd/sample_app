@@ -26,6 +26,11 @@
     <%= form.text_field :style, id: :product_style %>
   </div>
 
+   <div class="field">
+    <%= form.label :color %><br>
+    <%= form.text_field :color %>
+  </div>
+
   <div class="field">
     <%= form.label :speed %>
     <%= form.text_field :speed, id: :product_speed %>
@@ -41,7 +46,9 @@
     <%= form.text_field :image_url, id: :product_image_url %>
   </div>
 
+
   <div class="actions">
     <%= form.submit %>
   </div>
+
 <% end %>
