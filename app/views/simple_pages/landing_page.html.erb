@@ -5,8 +5,8 @@
 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
   <!-- Indicators -->
   <ol class="carousel-indicators">
+    <% dataSlideToCounter = 0 %>
   	<% @products.each do |product| %>
-  	<% dataSlideToCounter = 0 %>
     	<li data-target="#carousel-example-generic" data-slide-to="<%= dataSlideToCounter %>" class="<%= "active" if product == @products.first %>"></li>
       <% dataSlideToCounter += 1 %>
     <% end %>
