@@ -24,6 +24,13 @@
   		    <li role="presentation"><b><%= link_to "ABOUT", simple_pages_about_path %></b></li>
   		    <li role="presentation"><b><%= link_to "CONTACT", simple_pages_contact_path %></b></li>
   		  </ul>
+
+        <%= form_with(url: products_path, method: 'get', local: true) do |form| %>
+          <%= form.label :q, 'Search for:' %>
+          <%= form.text_field :q, id: 'q', value: params[:q] %>
+          <%= form.submit 'Search' %>
+        <% end %>
+        
       </div>
 		</nav>
 
