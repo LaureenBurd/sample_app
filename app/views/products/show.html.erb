@@ -2,7 +2,7 @@
   <div class="show">
     <p id="notice"><%= notice %></p>
     <div class="row">
-      <div class="col-md-8">
+      <div class="col-md-8 ">
         <p>
           <%= image_tag(@product.image_url, class: "img-responsive") %>
         </p>
@@ -58,5 +58,7 @@
 
 
   <%= @product.highest_rating_comment %>
+  <%= render 'new_comment' %>
+  <%= render 'comments' %>
 
 </article>
