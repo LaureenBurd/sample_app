@@ -64,6 +64,17 @@ li {
 	min-height: 100%
 }
 
+.carousel-caption {
+  color: #000;
+  top: 0;
+  bottom: auto;
+  text-align: right;
+  font-size: 1.5em;
+  line-height: 1.42857143;
+  letter-spacing: 0.05em;
+  padding-top: 100px;
+}
+
 #sign-in {
   width: 40%;
   float: left;
@@ -72,6 +83,15 @@ li {
 #sign-up {
   width: 40%;
   float: left;
+}
+
+.footer-bike {
+  width: 20%;
+  float: right;
+}
+
+#vector-bike {
+  margin-right: 0;
 }
 
 
