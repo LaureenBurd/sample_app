@@ -62,6 +62,12 @@
   <%= @product.highest_rating_comment %>
   <%= render 'new_comment' %>
   <%= render 'comments' %>
-  <%= will_paginate @comments %>
+  
+  <div class="digg-pagination">
+    <div class="page-info">
+      <%= page_entries_info @comments %>
+    <div>
+    <%= will_paginate @comments, :page_links => false %>
+  </div>
 
 </article>
