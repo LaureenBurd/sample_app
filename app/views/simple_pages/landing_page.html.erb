@@ -1,46 +1,62 @@
-<center><h1>WELCOME TO BIKE BERLIN</h1></center>
-<center><h3>Your Source For Used Bikes in Berlin</h3></center>
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  </head>
+
+
+  <body>
+    <center><h1>WELCOME TO BIKE BERLIN</h1></center>
+    <center><h3>Your Source For Used Bikes in Berlin</h3></center>
 
 
 
-<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-  <!-- Indicators -->
-  <ol class="carousel-indicators">
-    <% dataSlideToCounter = 0 %>
-  	<% @products.each do |product| %>
-    	<li data-target="#carousel-example-generic" data-slide-to="<%= dataSlideToCounter %>" class="<%= "active" if product == @products.first %>"></li>
-      <% dataSlideToCounter += 1 %>
-    <% end %>
-  </ol>
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <% dataSlideToCounter = 0 %>
+      	<% @products.each do |product| %>
+        	<li data-target="#carousel-example-generic" data-slide-to="<%= dataSlideToCounter %>" class="<%= "active" if product == @products.first %>"></li>
+          <% dataSlideToCounter += 1 %>
+        <% end %>
+      </ol>
 
-  <!-- Wrapper for slides -->
-  <div class="carousel-inner" role="listbox">
-  	<% @products.each do |product| %>
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner" role="listbox">
+      	<% @products.each do |product| %>
 
-    <div class="item<%= " active" if product == @products.first %>">
-      <%= image_tag(product.image_url) %>
-      <div class="carousel-caption">
-  			<%= product.name %>
-			</div>
+        <div class="item<%= " active" if product == @products.first %>">
+          <%= image_tag(product.image_url) %>
+          <div class="carousel-caption">
+      			<%= product.name %>
+    			</div>
+        </div>
+        <% end %>
+      </div>
+
+      <!-- Controls -->
+      <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+
     </div>
-    <% end %>
-  </div>
 
-  <!-- Controls -->
-  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
+    <Center>
+      <h3>Check Out Our <u><a href="/products">Products Page</a></u> To See What Items We Offer</h3>
+    </Center>
 
-</div>
+   </body> 
 
-<Center>
-  <h3>Check Out Our <u><a href="/products">Products Page</a></u> To See What Items We Offer</h3>
-</Center>
+  </html>
 
 
 

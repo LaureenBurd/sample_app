@@ -1,42 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
 
-<div class="container">
-	<center><h2>Contact Us!</h2></center>
-
-	<%= flash[:notice] %>
-
-	<%= form_with(url:"/simple_pages/thank_you", method: "post", local: true) do |form| %>
-	<div class="row">
-	  <div class="form-group">
-	    <%= form.label :name %>
-	    <%= form.text_field :name, class: "form-control", placeholder: "Enter Name" %>
-	  </div>
-	  <div class="form-group">
-	    <%= form.label :email %>
-	    <%= form.text_field :email, class: "form-control", placeholder: "Enter Email" %>
-	  </div>
-	  <div class="form-group">
-	    <%= form.label :message %>
-	    <%= form.text_area :message, class: "form-control", placeholder: "Enter Message", rows: 5 %>
-	  </div>
-	</div>
-	<%= form.submit "Send", class: "form_label" %>
-	<% end %>
-</div>
+	<head>
+		<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	</head>
 
 
 
+	<body>
 
-<center><div class="location">
-  <h3><b><span class="glyphicon glyphicon-map-marker"></span> Location: Wrangelstraße 14 10227 Berlin, Germany</b></h3>
-</div></center><!-- end location -->
+		<div class="container">
+			<center><h2>Contact Us!</h2></center>
 
-<center><div class="phone">
-  <h3><b><span class="glyphicon glyphicon-phone"></span> Phone: +49 30 20954518</b></h3>
-</div></center><!-- end phone -->
+			<%= flash[:notice] %>
 
-<center><div class="email">
-  <h3><b><span class="glyphicon glyphicon-envelope"></span> Email: inquiries@bikeberlin.com</b></h3>
-</div></center><!-- end email -->
+			<%= form_with(url:"/simple_pages/thank_you", method: "post", local: true) do |form| %>
+			<div class="row">
+			  <div class="form-group">
+			    <%= form.label :name %>
+			    <%= form.text_field :name, class: "form-control", placeholder: "Enter Name" %>
+			  </div>
+			  <div class="form-group">
+			    <%= form.label :email %>
+			    <%= form.text_field :email, class: "form-control", placeholder: "Enter Email" %>
+			  </div>
+			  <div class="form-group">
+			    <%= form.label :message %>
+			    <%= form.text_area :message, class: "form-control", placeholder: "Enter Message", rows: 5 %>
+			  </div>
+			</div>
+			<%= form.submit "Send", class: "form_label" %>
+			<% end %>
+		</div>
+
+
+
+
+		<center><div class="location">
+		  <h3><b><span class="glyphicon glyphicon-map-marker"></span> Location: Wrangelstraße 14 10227 Berlin, Germany</b></h3>
+		</div></center><!-- end location -->
+
+		<center><div class="phone">
+		  <h3><b><span class="glyphicon glyphicon-phone"></span> Phone: +49 30 20954518</b></h3>
+		</div></center><!-- end phone -->
+
+		<center><div class="email">
+		  <h3><b><span class="glyphicon glyphicon-envelope"></span> Email: inquiries@bikeberlin.com</b></h3>
+		</div></center><!-- end email -->
+	</body>
+
+</html>
 
 
 

@@ -1,73 +1,88 @@
-<article class="container">
-  <div class="show">
-    <p id="notice"><%= notice %></p>
-    <div class="row">
-      <div class="col-md-8 ">
-        <p>
-          <%= image_tag(@product.image_url, class: "img-responsive") %>
-        </p>
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  </head>
+
+  <body>
+
+    <article class="container">
+      <div class="show">
+        <p id="notice"><%= notice %></p>
+        <div class="row">
+          <div class="col-md-8 ">
+            <p>
+              <%= image_tag(@product.image_url, class: "img-responsive") %>
+            </p>
+          </div>
+
+          <div class="col-md-4">
+            <p>
+              <strong>Name:</strong>
+              <%= @product.name %>
+            </p>
+
+            <p>
+              <strong>Description:</strong>
+              <%= @product.description %>
+            </p>
+
+            <p>
+              <strong>Style:</strong>
+              <%= @product.style %>
+            </p>
+
+            <p>
+              <strong>Year:</strong>
+              <%= @product.year %>
+            </p>
+
+            <p>
+              <strong>Color:</strong>
+              <%= @product.color %>
+            </p>
+
+            <p>
+              <strong>Speed:</strong>
+              <%= @product.speed %>
+            </p>
+
+            <p>
+              <strong>Gender:</strong>
+              <%= @product.gender %>
+            </p>
+
+            <p>
+              <strong>Price:</strong>
+              <%= @product.price %>
+            </p>
+
+            <p>Average Rating: <div class="rated" data-score="<%= @product.average_rating %>"></div> </p>
+
+          </div>
+        </div>
       </div>
 
-      <div class="col-md-4">
-        <p>
-          <strong>Name:</strong>
-          <%= @product.name %>
-        </p>
+      <%= link_to 'Edit', edit_product_path(@product) %> |
+      <%= link_to 'Back', products_path %>
 
-        <p>
-          <strong>Description:</strong>
-          <%= @product.description %>
-        </p>
 
-        <p>
-          <strong>Style:</strong>
-          <%= @product.style %>
-        </p>
-
-        <p>
-          <strong>Year:</strong>
-          <%= @product.year %>
-        </p>
-
-        <p>
-          <strong>Color:</strong>
-          <%= @product.color %>
-        </p>
-
-        <p>
-          <strong>Speed:</strong>
-          <%= @product.speed %>
-        </p>
-
-        <p>
-          <strong>Gender:</strong>
-          <%= @product.gender %>
-        </p>
-
-        <p>
-          <strong>Price:</strong>
-          <%= @product.price %>
-        </p>
-
-        <p>Average Rating: <div class="rated" data-score="<%= @product.average_rating %>"></div> </p>
-
+      <%= @product.highest_rating_comment %>
+      <%= render 'new_comment' %>
+      <%= render 'comments' %>
+      
+      <div class="digg-pagination">
+        <div class="page-info">
+          <%= page_entries_info @comments %>
+        </div>
+        <div>
+        <%= will_paginate @comments, :page_links => false %>
+        </div>
       </div>
-    </div>
-  </div>
 
-  <%= link_to 'Edit', edit_product_path(@product) %> |
-  <%= link_to 'Back', products_path %>
-
-
-  <%= @product.highest_rating_comment %>
-  <%= render 'new_comment' %>
-  <%= render 'comments' %>
-  
-  <div class="digg-pagination">
-    <div class="page-info">
-      <%= page_entries_info @comments %>
-    <div>
-    <%= will_paginate @comments, :page_links => false %>
-  </div>
-
-</article>
+    </article>
+  </body>
+</html
