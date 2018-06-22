@@ -19,15 +19,15 @@
 			<%= form_tag("/static_pages/thank_you") do %>
 
 	      <div class="form-group">
-	        <%= text_field_tag :name, nil, class: "form-control", placeholder: "Enter Name", :required => true %>
+	        <%= text_field_tag :name, nil, class: "form-control", placeholder: "Enter Name", type:"text", :required => true %>
 	      </div>     
 
 	      <div class="form-group">
-	        <%= email_field_tag :email, nil, class: "form-control", placeholder: "Enter Email", :required => true %>
+	        <%= email_field_tag :email, nil, class: "form-control", placeholder: "Enter Email", type:"text", :required => true %>
 	      </div>
 
 	      <div class="form-group">
-	        <%= text_area_tag :message, nil, class: "form-control", placeholder: "Enter Message", :required => true %>
+	        <%= text_area_tag :message, nil, class: "form-control", placeholder: "Enter Message", type:"text", :required => true %>
 	      </div>      
 		  <%= submit_tag "Send", class: "btn btn-primary send-button" %>   
 		  <% end %>
