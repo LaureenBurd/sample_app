@@ -7,6 +7,7 @@ class PaymentsController < ApplicationController
 
     # This will charge the user's card:  
     begin
+      byebug
       charge = Stripe::Charge.create(
         amount: (@product.price*100).to_i,
         currency: "usd",

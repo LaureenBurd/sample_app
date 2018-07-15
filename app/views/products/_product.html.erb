@@ -1,6 +1,7 @@
 <div class="col-sm-2 col-md-4" id="products">
         <%= image_tag(product.image_url, class: "img-responsive")if product.image_url.present? %> 
         <h3><%= link_to product.name, product %></h3>
+        <% logger.debug "Product: #{@products}"%>
         <p><%= product.description %></p>
         <strong><%= product.style %></strong>
         <strong><%= product.year %></strong>
