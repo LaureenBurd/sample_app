@@ -1,0 +1,300 @@
+
+.cancel-on-png, .cancel-off-png, .star-on-png, .star-off-png, .star-half-png {
+  font-size: 2em;
+}
+
+@font-face {
+  font-family: "raty";
+  font-style: normal;
+  font-weight: normal;
+  src: url("./fonts/raty.eot");
+  src: url("./fonts/raty.eot?#iefix") format("embedded-opentype");
+  src: url("./fonts/raty.svg#raty") format("svg");
+  src: url("./fonts/raty.ttf") format("truetype");
+  src: url("./fonts/raty.woff") format("woff");
+}
+
+.cancel-on-png, .cancel-off-png, .star-on-png, .star-off-png, .star-half-png {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family: "raty";
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  speak: none;
+  text-transform: none;
+}
+
+.cancel-on-png:before {
+  content: "\e600";
+}
+
+.cancel-off-png:before {
+  content: "\e601";
+}
+
+.star-on-png:before {
+  content: "\f005";
+}
+
+.star-off-png:before {
+  content: "\f006";
+}
+
+.star-half-png:before {
+  content: "\f123";
+}
+/* line 7, /Users/laureenburd/Desktop/sample_app/app/assets/stylesheets/products.scss */
+#products {
+  padding-right: 120px;
+}
+
+/* line 11, /Users/laureenburd/Desktop/sample_app/app/assets/stylesheets/products.scss */
+#products h3 {
+  margin-bottom: 0;
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+
+/* line 17, /Users/laureenburd/Desktop/sample_app/app/assets/stylesheets/products.scss */
+#products p {
+  font-size: 1.5em;
+  line-height: 1.42857143;
+  padding-bottom: 5px;
+}
+
+/* line 23, /Users/laureenburd/Desktop/sample_app/app/assets/stylesheets/products.scss */
+#products strong {
+  padding-right: 40px;
+}
+
+/* line 27, /Users/laureenburd/Desktop/sample_app/app/assets/stylesheets/products.scss */
+#products img {
+  padding-top: 50px;
+}
+/* line 1, /Users/laureenburd/Desktop/sample_app/app/assets/stylesheets/scaffolds.scss */
+body {
+  background-color: #fff;
+  color: #333;
+  margin: 33px;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 10, /Users/laureenburd/Desktop/sample_app/app/assets/stylesheets/scaffolds.scss */
+p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 16, /Users/laureenburd/Desktop/sample_app/app/assets/stylesheets/scaffolds.scss */
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+/* line 22, /Users/laureenburd/Desktop/sample_app/app/assets/stylesheets/scaffolds.scss */
+a {
+  color: #000;
+}
+/* line 25, /Users/laureenburd/Desktop/sample_app/app/assets/stylesheets/scaffolds.scss */
+a:visited {
+  color: #666;
+}
+/* line 29, /Users/laureenburd/Desktop/sample_app/app/assets/stylesheets/scaffolds.scss */
+a:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+/* line 35, /Users/laureenburd/Desktop/sample_app/app/assets/stylesheets/scaffolds.scss */
+th {
+  padding-bottom: 5px;
+}
+
+/* line 39, /Users/laureenburd/Desktop/sample_app/app/assets/stylesheets/scaffolds.scss */
+td {
+  padding: 0 5px 7px;
+}
+
+/* line 44, /Users/laureenburd/Desktop/sample_app/app/assets/stylesheets/scaffolds.scss */
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+
+/* line 49, /Users/laureenburd/Desktop/sample_app/app/assets/stylesheets/scaffolds.scss */
+#notice {
+  color: green;
+}
+
+/* line 53, /Users/laureenburd/Desktop/sample_app/app/assets/stylesheets/scaffolds.scss */
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+/* line 59, /Users/laureenburd/Desktop/sample_app/app/assets/stylesheets/scaffolds.scss */
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px 7px 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+/* line 66, /Users/laureenburd/Desktop/sample_app/app/assets/stylesheets/scaffolds.scss */
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px -7px 0;
+  background-color: #c00;
+  color: #fff;
+}
+/* line 76, /Users/laureenburd/Desktop/sample_app/app/assets/stylesheets/scaffolds.scss */
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+
+/* line 82, /Users/laureenburd/Desktop/sample_app/app/assets/stylesheets/scaffolds.scss */
+label {
+  display: block;
+}
+/* line 1, /Users/laureenburd/Desktop/sample_app/app/assets/stylesheets/simple_pages.scss */
+html, body {
+  height: 100%;
+}
+
+/* line 5, /Users/laureenburd/Desktop/sample_app/app/assets/stylesheets/simple_pages.scss */
+nav {
+  color: #a80822;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 1.125em;
+  line-height: 1.42857143;
+  letter-spacing: 0.05em;
+  font-weight: 300;
+}
+
+/* line 14, /Users/laureenburd/Desktop/sample_app/app/assets/stylesheets/simple_pages.scss */
+nav .container-fluid {
+  background-color: #b5b610;
+}
+
+/* line 18, /Users/laureenburd/Desktop/sample_app/app/assets/stylesheets/simple_pages.scss */
+nav li {
+  display: inline-block;
+  padding: 10px;
+  color: #a80822;
+  font-size: 1.5em;
+}
+
+/* line 26, /Users/laureenburd/Desktop/sample_app/app/assets/stylesheets/simple_pages.scss */
+input#q {
+  margin-bottom: 10px;
+}
+
+/* line 30, /Users/laureenburd/Desktop/sample_app/app/assets/stylesheets/simple_pages.scss */
+h1 {
+  color: #a80822;
+  font-family: 'Playfair Display', serif;
+  font-family: 'PT Serif', serif;
+  font-size: 4em;
+  font-weight: 500;
+}
+
+/* line 38, /Users/laureenburd/Desktop/sample_app/app/assets/stylesheets/simple_pages.scss */
+h2 {
+  color: #a80822;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 3em;
+  padding-bottom: 60px;
+}
+
+/* line 45, /Users/laureenburd/Desktop/sample_app/app/assets/stylesheets/simple_pages.scss */
+h3 {
+  color: #a80822;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  padding-top: 0;
+  padding-bottom: 40px;
+}
+
+/* line 52, /Users/laureenburd/Desktop/sample_app/app/assets/stylesheets/simple_pages.scss */
+p {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 2em;
+  line-height: 1.42857143;
+}
+
+/* line 59, /Users/laureenburd/Desktop/sample_app/app/assets/stylesheets/simple_pages.scss */
+li {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+/* line 63, /Users/laureenburd/Desktop/sample_app/app/assets/stylesheets/simple_pages.scss */
+.page-container {
+  min-height: 100%;
+}
+
+/* line 67, /Users/laureenburd/Desktop/sample_app/app/assets/stylesheets/simple_pages.scss */
+.carousel-caption {
+  color: #000;
+  top: 0;
+  bottom: auto;
+  text-align: right;
+  font-size: 1.5em;
+  line-height: 1.42857143;
+  letter-spacing: 0.05em;
+  padding-top: 100px;
+}
+
+/* line 78, /Users/laureenburd/Desktop/sample_app/app/assets/stylesheets/simple_pages.scss */
+#sign-in {
+  width: 40%;
+  float: left;
+}
+
+/* line 83, /Users/laureenburd/Desktop/sample_app/app/assets/stylesheets/simple_pages.scss */
+#sign-up {
+  width: 40%;
+  float: left;
+}
+
+/* line 89, /Users/laureenburd/Desktop/sample_app/app/assets/stylesheets/simple_pages.scss */
+.footer-bike {
+  width: 20%;
+  float: right;
+}
+
+/* line 94, /Users/laureenburd/Desktop/sample_app/app/assets/stylesheets/simple_pages.scss */
+#vector-bike {
+  margin-right: 0;
+}
+
+/* line 99, /Users/laureenburd/Desktop/sample_app/app/assets/stylesheets/simple_pages.scss */
+footer {
+  color: white;
+  padding: 20px 0;
+  background-color: #a80822;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+
